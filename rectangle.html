@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vẽ hình chữ nhật</title>
+</head>
+<body>
+    <script>
+        let i = j =1;
+        let width = +prompt('Hãy nhập chiều rộng: ');
+        let height = +prompt('Hãy nhập chiều cao: ');
+        let point = prompt('Hãy nhập ký tự: ');
+        while (j<=height) {
+            while (i<=width) {
+                if (j==1 || i==1 || j==height || i==width ) {
+                    document.write(point);
+                } else {
+                    document.write('&nbsp'+'&nbsp');     
+                }  
+                i++;
+            }
+            document.write('<br>');
+            i=1;
+            j++;
+        }
+        
+        
+    </script>
+</body>
+</html>
