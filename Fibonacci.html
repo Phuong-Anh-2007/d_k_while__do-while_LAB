@@ -10,15 +10,15 @@
     <script>
         let n = prompt('Nhập n:');
         let a = b =1;
-        alert(a);
-        alert(b);
+        document.write(a+',');
+        document.write(b+',');
         let i,c;
         let dem = 0;
         while (dem != n-2) {
             c=a+b;
             a=b;
             b=c;
-            alert(c);
+            document.write(c+',');
             dem++;
         }
     </script>
